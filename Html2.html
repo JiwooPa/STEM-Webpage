@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+        <head>
+             <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STEM Project: The Flame Change</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background-color: #f5f5f5; }
+    header { background-color: black; text-align: center; padding: 2em; color: white; }
+    .gradient-text {
+      font-size: 2.5em;
+      font-weight: bold;
+      background: linear-gradient(90deg, #ff6a00, #ffcc00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: 'Arial Black', sans-serif;
+    }
+    .wow {
+      font-size: 1em;
+      font-weight: bold;
+      background: linear-gradient(90deg, #ff6a00, #ffcc00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: 'Arial Black', sans-serif;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+      text-align: center;
+      table-layout: fixed;
+    }
+    th, td {
+      padding: 16px;
+      border: 1px solid #ccc;
+    }
+    th a {
+      color: white;
+      text-decoration: none;
+      display: block;
+    }
+    tr.header-row {
+      background-color: #0077cc;
+      color: white;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .item {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    }
+    .item img {
+      max-width: 100%;
+      height: 150px;
+      object-fit: contain;
+    }
+    #experiment-method {
+      padding: 20px;
+      background-color: #ffffff;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="gradient-text">STEM Project: The Flame Change</div>
+    <div class="wow">Explore the visual differences in flame tests!</div>
+  </header>
+
+  
+            <section id="menu">
+    <h2 style="text-align: center; font-size: 2em;">Information</h2>
+    <table>
+      <tr class="header-row">
+        <th><a href="Home.html">Home</a></th>
+        <th><a href="Html2.html">Information</a></th>
+        <th><a href="Html3.html" target="_asd">Method</a></th>
+        <th><a href="Html4.html">Pictures/Videos</a></th>
+        <th><a href="Html5.html" target="_asd">Result</a></th>
+      </tr>
+    </table>
+  </section>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STEM Project: The Flame Change</title>
+  <style> <!--https://css-tricks.com/snippets/css/gradient-text/-->
+    body { font-family: Arial, sans-serif; margin: 0; background-color: #f5f5f5; }
+    header { background-color: black; text-align: center; padding: 2em; color: white; }
+    .gradient-text {
+      font-size: 2.5em;
+      font-weight: bold;
+      background: linear-gradient(90deg, #ff6a00, #ffcc00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: 'Arial Black', sans-serif;
+    }
+    .wow {
+      font-size: 1em;
+      font-weight: bold;
+      background: linear-gradient(90deg, #ff6a00, #ffcc00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: 'Arial Black', sans-serif;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+      text-align: center;
+      table-layout: fixed;
+    }
+    th, td {
+      padding: 16px;
+      border: 1px solid #ccc;
+    }
+    th a {
+      color: white;
+      text-decoration: none;
+      display: block;
+    }
+    tr.header-row {
+      background-color: #0077cc;
+      color: white;
+    }
+  </style>
+</head>
+  </section>
+    <canvas id="flameGraph" width="600" height="400"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const ctx = document.getElementById('flameGraph').getContext('2d');
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Sodium', 'Potassium', 'Calcium', 'Copper', 'Strontium'],
+      datasets: [{
+        label: 'Relative Flame Intensity',
+        data: [10, 6, 8, 7, 9],
+        backgroundColor: ['#ffcc00', '#cc99ff', '#ff6633', '#66ffcc', '#ff3366']
+      }]
+    },
+    options: {
+      scales: {
+        y: { beginAtZero: true }
+      }
+    }
+  });
+</script>
+
+<body>
+   
+<head>
+  <meta charset="UTF-8">
+  <title>Scroll Buttons</title>
+  <style>
+    body {
+      height: 2000px; /* This makes the page tall enough to scroll */
+      margin: 0;
+      padding: 20px;
+      font-family: sans-serif;
+    }
+
+    .scroll-btn {
+      position: fixed;
+      right: 20px;
+      padding: 10px 15px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    #goTop {
+      bottom: 70px;
+    }
+
+    #goDown {
+      bottom: 20px;
+    }
+
+    .scroll-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="goTop" class="scroll-btn">^</button>
+  <button id="goDown" class="scroll-btn">v</button>
+
+  <script>
+    document.getElementById('goTop').onclick = function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    document.getElementById('goDown').onclick = function () {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    };
+  </script>
+
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flame Test Experiment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2em 0;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+
+
+
+</body>
+</html>
+
+        </body></html>
+
+    
+
+    

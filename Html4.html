@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STEM Project: The Flame Change</title>
+  <style> 
+    body { font-family: Arial, sans-serif; margin: 0; background-color: #f5f5f5; }
+    header { background-color: black; text-align: center; padding: 2em; color: white; }
+    .gradient-text {
+      font-size: 2.5em;
+      font-weight: bold;
+      background: linear-gradient(90deg, #ff6a00, #ffcc00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: 'Arial Black', sans-serif;
+    }
+    .wow {
+      font-size: 1em;
+      font-weight: bold;
+      background: linear-gradient(90deg, #ff6a00, #ffcc00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: 'Arial Black', sans-serif;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+      text-align: center;
+      table-layout: fixed;
+    }
+    th, td {
+      padding: 16px;
+      border: 1px solid #ccc;
+    }
+    th a {
+      color: white;
+      text-decoration: none;
+      display: block;
+    }
+    tr.header-row {
+      background-color: #0077cc;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="gradient-text">STEM Project: The Flame Change</div>
+    <div class="wow">Explore the visual differences in flame tests!</div>
+  </header>
+
+  <section id="menu">
+    <h2 style="text-align: center; font-size: 2em;">Pictures/Videos</h2>
+    <table>
+      <tr class="header-row">
+        <th><a href="Home.html" target="_blank">Home</a></th>
+        <th><a href="Html2.html" target="_blank">Information</a></th>
+        <th><a href="Html3.html" target="_blank">Method</a></th>
+        <th><a href="Html4.html" target="_blank">Pictures/Videos</a></th>
+        <th><a href="Html5.html" target="_blank">Result</a></th>
+      </tr>
+    </table>
+  </section>
+
+  <section id="video" style="text-align: center; padding: 20px;">
+    <h2>Watch the Experiment</h2>
+
+    <!-- Corrected YouTube embed URLs -->
+    <iframe width="560" height="315" 
+      src="https://www.youtube.com/embed/JIJjeBxiuwA" 
+      title="YouTube video player" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      allowfullscreen></iframe>
+
+    <iframe width="560" height="315" 
+      src="https://www.youtube.com/embed/3_wRaePXIOA" 
+      title="YouTube video player" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      allowfullscreen></iframe>
+
+    <iframe width="560" height="315" 
+      src="https://www.youtube.com/embed/JeLU0nfsoUA" 
+      title="YouTube video player" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      allowfullscreen></iframe>
+
+    <iframe width="560" height="315" 
+      src="https://www.youtube.com/embed/Q4_SZ08YKVY" 
+      title="YouTube video player" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      allowfullscreen></iframe>
+  </section>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Scroll Buttons</title>
+  <style>
+    body {
+      height: 2000px; /* This makes the page tall enough to scroll */
+      margin: 0;
+      padding: 20px;
+      font-family: sans-serif;
+    }
+
+    .scroll-btn {
+      position: fixed;
+      right: 20px;
+      padding: 10px 15px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    #goTop {
+      bottom: 70px;
+    }
+
+    #goDown {
+      bottom: 20px;
+    }
+
+    .scroll-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="goTop" class="scroll-btn">^</button>
+  <button id="goDown" class="scroll-btn">v</button>
+
+  <script>
+    document.getElementById('goTop').onclick = function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    document.getElementById('goDown').onclick = function () {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    };
+  </script>
+</body>
+</html>
